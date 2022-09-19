@@ -46,7 +46,7 @@
 #define LED_MATRIX_ROW_PINS     { C8, C7, C6, C5, C4, C9 }
 #define LED_MATRIX_COLS         MATRIX_COLS
 #define LED_MATRIX_COL_PINS     MATRIX_COL_PINS
-#define DRIVER_LED_TOTAL        104
+#define DRIVER_LED_TOTAL        105
 
 /* Dexter's PWM hack */
 #define ACTIVATE_PWM_CHAN_0 //A0

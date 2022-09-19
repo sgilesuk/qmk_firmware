@@ -8,12 +8,13 @@ MCU = SN32F268F
 # Build Options
 #   comment out to disable the options.
 #
+LTO_ENABLE = no
 MAGIC_ENABLE = yes
 MAGIC_KEYCODE_ENABLE = yes
 BOOTMAGIC_ENABLE = yes  # Virtual DIP switch configuration
-EXTRAKEY_ENABLE = yes   # Audio control and System control
+EXTRAKEY_ENABLE = no   # Audio control and System control
 NKRO_ENABLE = yes       # USB Nkey Rollover
-DIP_SWITCH_ENABLE = yes
+DIP_SWITCH_ENABLE = no
 
 # Custom Key and LED matrix handling
 CUSTOM_MATRIX = yes
