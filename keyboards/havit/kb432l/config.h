@@ -40,13 +40,15 @@
 #define MATRIX_ROW_PINS { B0, B1, B2, B3, B4, B5 }
 
 /* LED matrix */
+#define LED_MATRIX_MAXIMUM_BRIGHTNESS 255
+#define LED_MATRIX_STARTUP_VAL LED_MATRIX_MAXIMUM_BRIGHTNESS
 #define LED_MATRIX_ROWS         MATRIX_ROWS
 #define LED_MATRIX_ROW_CHANNELS 1
 #define LED_MATRIX_ROWS_HW      (LED_MATRIX_ROWS * LED_MATRIX_ROW_CHANNELS)
 #define LED_MATRIX_ROW_PINS     { C8, C7, C6, C5, C4, C9 }
 #define LED_MATRIX_COLS         MATRIX_COLS
 #define LED_MATRIX_COL_PINS     MATRIX_COL_PINS
-#define DRIVER_LED_TOTAL        105
+#define DRIVER_LED_TOTAL        108
 
 /* Dexter's PWM hack */
 #define ACTIVATE_PWM_CHAN_0 //A0
@@ -73,17 +75,10 @@
 #define ACTIVATE_PWM_CHAN_22 //D8
 
 /* Connects each switch in the dip switch to the GPIO pin of the MCU */
-#define DIP_SWITCH_PINS { B3 }
-
 /* Debounce reduces chatter (unintended double-presses) - set 0 if debouncing is not needed */
 #define DEBOUNCE 5
 
 /* LED Status indicators */
-#define LED_NUM_LOCK_PIN    D7
-#define LED_CAPS_LOCK_PIN   D6
-#define LED_MAC_PIN         B5
-#define LED_WIN_PIN         B4
-#define LED_PIN_ON_STATE    1
 
 /* Enable led matrix effects */
 #define ENABLE_LED_MATRIX_ALPHAS_MODS

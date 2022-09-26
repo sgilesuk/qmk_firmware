@@ -1,7 +1,6 @@
 # project specific files
 SRC = ../../../drivers/led/sn32/matrix_sn32f24xx.c
 SRC += rand.c
-
 # MCU name
 MCU = SN32F268F
 
@@ -12,7 +11,7 @@ LTO_ENABLE = no
 MAGIC_ENABLE = yes
 MAGIC_KEYCODE_ENABLE = yes
 BOOTMAGIC_ENABLE = yes  # Virtual DIP switch configuration
-EXTRAKEY_ENABLE = no   # Audio control and System control
+EXTRAKEY_ENABLE = yes   # Audio control and System control
 NKRO_ENABLE = yes       # USB Nkey Rollover
 DIP_SWITCH_ENABLE = no
 
